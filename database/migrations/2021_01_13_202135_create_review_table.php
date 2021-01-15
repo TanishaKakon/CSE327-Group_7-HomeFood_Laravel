@@ -16,13 +16,13 @@ class CreateReviewTable extends Migration
         Schema::create('review', function (Blueprint $table) {
             $table->id();
             $table->integer("UserId");
-            $table->string("UserName");
-            $table->string("ResturantName");
             $table->integer("FoodId");
-            $table->string("FoodName");
-            $table->integer("Score");
+            $table->enum("Score",range(1,5));
             $table->string("Remarks");
             $table->timestamps();
+
+            $table->foreign("UserId")->references("id")->on(users)->onDelete("cascade");
+            $table->foreign("FoodId")->references("id")->on(food)->onDelete("cascade");
         });
     }
 

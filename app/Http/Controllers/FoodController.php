@@ -5,12 +5,28 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\food;
 use App\Models\cart;
+use App\Models\review;
 use Session;
 use Illuminate\Support\Facades\DB;
 
 class FoodController extends Controller
 {
     //
+    public function index()
+    {
+        $review = review::all();
+        return view('review', ['review'=>$review]);
+         
+    }
+
+    public function reviewShowFunction($id)
+    {
+        $food = food::find($id);
+        $review = review::all()->where('FoodId', $id);
+        return view('reviewShowFunction', compact('food', 'review'));
+    }
+
+
     function indexFunction(){
 
     	$data= food::all();
@@ -29,6 +45,26 @@ class FoodController extends Controller
         $data= food::where('FoodName', 'like', '%'.$req->input('query').'%')->get();
     	return view('search',['array'=>$data]);
     }
+
+    public function reviewStoreFunction(Request $request)
+    {
+        $this->validate($request, [
+            'id' => 'required' ,
+            'UserId' => 'required' ,
+            'FoodId' => 'required' ,
+            'Score' => 'required',
+            "Remarks"=>'required'
+        ]);
+        
+        $review = new Review;
+        $review->title = $request->input('title');
+        $review->body = $request->input('body');
+        $review->rating = $request->input('rating');
+        $review->post_id = $request['post_id'];
+        $review->save();
+        return redirect('/posts')->with('success', 'post created');
+    }
+
 
     function addToCartFunction(Request $req)
     {
@@ -66,5 +102,21 @@ class FoodController extends Controller
     {
         cart::destroy($id);
         return redirect('cartlist');
+    }
+    function reviewListFunction()
+    {
+        $user_id=Session::get('user')['id'];
+       $food= DB::table('review')
+        ->join('food','review.FoodId','=','food.id')
+        ->where('review.UserId',$user_id)
+        ->select('food.*','review.id as ReviewId')
+        ->get();
+
+        return view('reviewlist',['food'=>$food]);
+    }
+    static function reviewItemFunction()
+    {
+     $food_id=Session::get('food')['id'];
+     return review::where('FoodId',$food_id)->count();
     }
 }
