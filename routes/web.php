@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FoodController;
 
 /*
 |--------------------------------------------------------------------------
@@ -11,8 +12,8 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
-<<<<<<< HEAD
-*/ 
+
+*/
 
 
 
@@ -23,13 +24,12 @@ Route::get('/', function () {
 Auth::routes(['verify' => true]);
 
 Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
-=======
-*/
 
-Route::get('/', function () {
+Route::get('/foodmenu', function () {
+    return view('foodmenu');
+});
 
-    return view('welcome');
-});  
+
 
 Route::get('/contact-us', function () {
     return 'contact-us' ;
