@@ -14,8 +14,22 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+
+    return view('welcome');
+});  
+
+Route::get('/contact-us', function () {
+    return 'contact-us' ;
+});  
+Route::get('/ordernow', function () {
     return view('ordernow');
 });
+
+Route::get('/contact-us','ContactController@contact');
+
+Route::get('/home', 'HomeController@index')->name('home'); 
+
+Route::post('/contact-us', 'ContactController@contactSubmit')->name('contact.submit');
 
 Route::get("/foodmenu",[FoodController::class,'indexFunction']);
 Route::get("detail/{id}",[FoodController::class,'detailFunction']);
@@ -30,4 +44,6 @@ Route::get("myorders",[FoodController::class,'myOrders']);
 
 
 
+
 ?>
+
