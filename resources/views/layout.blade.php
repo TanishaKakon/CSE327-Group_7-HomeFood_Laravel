@@ -48,5 +48,55 @@
     .search-box{
     	width: 500px !important;
     }
+
+	.cart-list-divider{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 20px;
+        padding-bottom: 20px
+    }
+	.review{
+    display: inline-block;
+    margin-top: 8px;
+	margin-bottom: -2px;
+	margin-right: 2px;
+	font-size: 13px;
+    color: yellow;
+    line-height: 20px;
+}
+
+.form-review{
+        position: relative;
+        bottom:80px;
+        left: 430px;
+        width: 200px;
+    }
+    
+    .button {
+      background-color: #008CBA;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+      position: relative; 
+      left: 40px;
+        }
+    .button {
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+    }
+    
+    .button:hover {
+      background-color: #6574cd; /* Green */
+      color: white;
+    }
+    
+
+
 </style>
 </html>

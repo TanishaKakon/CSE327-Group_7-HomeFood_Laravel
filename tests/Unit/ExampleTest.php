@@ -1,7 +1,9 @@
+
 <?php
 
 namespace Tests\Unit;
 
+use PHPUnit\Framework\TestCase;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
@@ -12,7 +14,10 @@ class ExampleTest extends TestCase
      *
      * @return void
      */
-
+    public function testBasicTest()
+    {
+        $this->assertTrue(true);
+    }
 
     /**@test**/
     public function testDatabase()
@@ -23,11 +28,21 @@ class ExampleTest extends TestCase
      ]); 
          
     } 
+}
+
+<?php
 
 
-    }
+
+
+
+
+    
+
+
     
     
+    
 
     
 
@@ -37,3 +52,4 @@ class ExampleTest extends TestCase
 
 
 
+>>>>>>> main

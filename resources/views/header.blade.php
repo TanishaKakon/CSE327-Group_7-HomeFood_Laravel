@@ -35,7 +35,9 @@ if(Session::has('users'))
       </form>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/cartlist">Cart({{$total}})</a></li>
+
           <li><a href="/myorders">Order</a></li>
+
             <li><a href="#">Track Order</a></li>
         @if(Session::has('users'))
           <li class="dropdown">
