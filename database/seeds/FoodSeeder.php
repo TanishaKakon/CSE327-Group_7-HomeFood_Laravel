@@ -1,6 +1,8 @@
 <?php
 
+
 //namespace Database\Seeders;
+
 
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -16,16 +18,20 @@ class FoodSeeder extends Seeder
     {
         //
         DB::table('food')->insert([
+
             ['ResturantName'=>'JunkFood Lovers',
             'ReviewId'=>'1',
+
             'FoodName'=>'Beef Burger',
             'FoodType'=>'Snacks',
             'FoodDetails'=>'Juicy double beef patty with honey mustered sauce',
             'FoodImage'=>'https://images.all-free-download.com/images/graphiclarge/homemade_burger_560254.jpg',
             'Price'=>'350',
             'FoodStatus'=>'Availabe'],
+
             ['ResturantName'=>'JunkFood Lovers',
             'ReviewId'=>'2',
+
             'FoodName'=>'Chicken Burger',
             'FoodType'=>'Snacks',
             'FoodDetails'=>'Juicy grilled chicken patty with honey mustered sauce',
@@ -33,7 +39,9 @@ class FoodSeeder extends Seeder
             'Price'=>'220',
             'FoodStatus'=>'Availabe'],
             ['ResturantName'=>'JunkFood Lovers',
+
             'ReviewId'=>'1',
+
             'FoodName'=>'Chicken Fry',
             'FoodType'=>'Snacks',
             'FoodDetails'=>'Spicy and crispy chicken fry',
@@ -41,7 +49,9 @@ class FoodSeeder extends Seeder
             'Price'=>'100',
             'FoodStatus'=>'Availabe'],
             ['ResturantName'=>'Desert Heaven',
+
             'ReviewId'=>'2',
+
             'FoodName'=>'Vanilla Cake',
             'FoodType'=>'Desert',
             'FoodDetails'=>'Soft and moist vanilla cake with perfectly balanced sweetness',
@@ -49,7 +59,9 @@ class FoodSeeder extends Seeder
             'Price'=>'650',
             'FoodStatus'=>'Availabe'],
             ['ResturantName'=>'Desert Heaven',
+
             'ReviewId'=>'4',
+
             'FoodName'=>'Black Forest Cake',
             'FoodType'=>'Desert',
             'FoodDetails'=>'Yummy black forest cake with whipped cream,choco chips and cherry topping,',
@@ -57,7 +69,9 @@ class FoodSeeder extends Seeder
             'Price'=>'750',
             'FoodStatus'=>'Availabe'],
             ['ResturantName'=>'Thai Kingdom',
+
             'ReviewId'=>'3',
+
             'FoodName'=>'Tom Yum Soup',
             'FoodType'=>'Thai',
             'FoodDetails'=>'Yummy tom yum soup with shrimp, chicken and mushroom',
@@ -65,7 +79,9 @@ class FoodSeeder extends Seeder
             'Price'=>'450',
             'FoodStatus'=>'Availabe'],
             ['ResturantName'=>'Thai Kingdom',
+
             'ReviewId'=>'3',
+
             'FoodName'=>'Fried Rice',
             'FoodType'=>'Thai',
             'FoodDetails'=>'Fried rice with vegetable, egg, shrimp, chicken and mushroom',
@@ -73,7 +89,9 @@ class FoodSeeder extends Seeder
             'Price'=>'300',
             'FoodStatus'=>'Availabe'],
             ['ResturantName'=>'Thai Kingdom',
+
             'ReviewId'=>'4',
+
             'FoodName'=>'Chicken Noodle Soup',
             'FoodType'=>'Thai',
             'FoodDetails'=>'Traditional Thai hot and spicy chicken noodle soup',
@@ -83,4 +101,6 @@ class FoodSeeder extends Seeder
 
         ]);
     }
+
 }
+

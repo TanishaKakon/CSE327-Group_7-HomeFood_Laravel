@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 namespace App\Models;
@@ -9,3 +10,15 @@ class food extends Model
 {
     use HasFactory;
 }
+=======
+<?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class food extends Model
+{
+    //
+}
+>>>>>>> main

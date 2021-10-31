@@ -1,3 +1,4 @@
+
 <?php
 
 namespace App\Models;
@@ -9,4 +10,5 @@ class cart extends Model
 {
     use HasFactory;
     public $table="cart";
+
 }

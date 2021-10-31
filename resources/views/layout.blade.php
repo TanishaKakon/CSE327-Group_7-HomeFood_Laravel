@@ -48,6 +48,7 @@
     .search-box{
     	width: 500px !important;
     }
+
 	.cart-list-divider{
         border-bottom: 1px solid #ccc;
         margin-bottom: 20px;
@@ -94,29 +95,8 @@
       background-color: #6574cd; /* Green */
       color: white;
     }
-    .button1 {
-      background-color: #008CBA;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 4px 2px;
-      cursor: pointer;
-      border-radius: 4px;
-      position: relative; 
-      left: 0px;
-        }
-    .button1 {
-      -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-    }
     
-    .button1:hover {
-      background-color: #6574cd; /* Green */
-      color: white;
-    }
+
+
 </style>
 </html>
