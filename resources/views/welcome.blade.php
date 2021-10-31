@@ -6,10 +6,17 @@
 
         <title>Laravel</title>
 
+<<<<<<< HEAD
         
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
 
+=======
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+
+        <!-- Styles -->
+>>>>>>> main
         <style>
             html, body {
                 background-color: #fff;
@@ -47,7 +54,11 @@
             .title {
                 font-size: 84px;
             }
+<<<<<<< HEAD
             
+=======
+
+>>>>>>> main
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -57,7 +68,10 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+<<<<<<< HEAD
             
+=======
+>>>>>>> main
 
             .m-b-md {
                 margin-bottom: 30px;
@@ -80,6 +94,7 @@
                 </div>
             @endif
 
+<<<<<<< HEAD
            
 
                 
@@ -87,3 +102,24 @@
         </div>
     </body>
 </html>
+=======
+            <div class="content">
+                <div class="title m-b-md">
+                    Laravel
+                </div>
+
+                <div class="links">
+                    <a href="https://laravel.com/docs">Docs</a>
+                    <a href="https://laracasts.com">Laracasts</a>
+                    <a href="https://laravel-news.com">News</a>
+                    <a href="https://blog.laravel.com">Blog</a>
+                    <a href="https://nova.laravel.com">Nova</a>
+                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="https://vapor.laravel.com">Vapor</a>
+                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html> 
+>>>>>>> main

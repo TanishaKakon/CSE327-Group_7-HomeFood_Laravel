@@ -9,6 +9,10 @@
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
+<<<<<<< HEAD
+=======
+        "binarytorch/larecipe": "^2.4",
+>>>>>>> main
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^1.0",
         "guzzlehttp/guzzle": "^6.3",
