@@ -11,6 +11,19 @@ use Illuminate\Support\Facades\Route;
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
 |
+<<<<<<< HEAD
+*/ 
+
+
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Auth::routes(['verify' => true]);
+
+Route::get('/home', 'HomeController@index')->name('home')->middleware('verified');
+=======
 */
 
 Route::get('/', function () {
@@ -47,3 +60,4 @@ Route::get("myorders",[FoodController::class,'myOrders']);
 
 ?>
 
+>>>>>>> main

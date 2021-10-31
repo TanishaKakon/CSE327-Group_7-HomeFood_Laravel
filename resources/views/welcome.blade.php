@@ -6,10 +6,17 @@
 
         <title>Laravel</title>
 
+<<<<<<< HEAD
+        
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+
+
+=======
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
 
         <!-- Styles -->
+>>>>>>> main
         <style>
             html, body {
                 background-color: #fff;
@@ -47,7 +54,11 @@
             .title {
                 font-size: 84px;
             }
+<<<<<<< HEAD
+            
+=======
 
+>>>>>>> main
             .links > a {
                 color: #636b6f;
                 padding: 0 25px;
@@ -57,6 +68,10 @@
                 text-decoration: none;
                 text-transform: uppercase;
             }
+<<<<<<< HEAD
+            
+=======
+>>>>>>> main
 
             .m-b-md {
                 margin-bottom: 30px;
@@ -79,6 +94,15 @@
                 </div>
             @endif
 
+<<<<<<< HEAD
+           
+
+                
+            </div>
+        </div>
+    </body>
+</html>
+=======
             <div class="content">
                 <div class="title m-b-md">
                     Laravel
@@ -98,3 +122,4 @@
         </div>
     </body>
 </html> 
+>>>>>>> main

@@ -5,7 +5,11 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
+<<<<<<< HEAD
+                <div class="card-header">{{ __('Welcome') }}</div>
+=======
                 <div class="card-header">{{ __('Dashboard') }}</div>
+>>>>>>> main
 
                 <div class="card-body">
                     @if (session('status'))
